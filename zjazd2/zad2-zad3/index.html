@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezerwacja</title>
+</head>
+<body>
+<form id="formularz" method="POST" action="zad3.php">
+  <p>Pola z gwiazdką są wymagane:</p>
+  <label for="ilosc">Ilość osób*</label>
+    <select id="ilosc" name="ilosc" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select><br>
+  <label for="imie">Imię*</label>
+  <input type="text" id="imie" name="imie" required><br>
+  <label for="nazwisko">Nazwisko*</label>
+  <input type="text" id="nazwisko" name="nazwisko" required><br>
+  <label for="telefon">Telefon*</label>
+  <input type="tel" id="telefon" name="telefon" required><br>
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="email" required><br>
+  <label for="adres">Adres*</label>
+  <input type="text" id="adres" name="adres" required><br>
+  <label for="data">Data*</label>
+  <input type="date" id="data" name="data" required><br>
+  <label for="godzina">Godzina*</label>
+  <input type="time" id="godzina" name="godzina" required><br>
+  <label for="lozko">Czy dodatkowe łóżko?</label>
+  <fieldset id="lozko" style="width: 100px;">
+    <label for="nie">nie</label>
+    <input type="radio" name="lozko" id="nie" value="nie"/><br>
+    <label for="tak">tak</label>
+  <input type="radio" name="lozko" id="tak" value="tak"/><br>
+  </fieldset>
+  <label for="udogodnienia">Udogodnienia</label>
+  <fieldset id="udogodnienia">
+    <label for="popielniczka">Popielniczka</label>
+    <input type="checkbox" name="popielniczka" id="popielniczka" value="popielniczka"/><br>
+    <label for="minibar">minibar</label>
+    <input type="checkbox" name="minibar" id="minibar" value="minibar"/><br>
+    <label for="klimatyzacja">klimatyzacja</label>
+    <input type="checkbox" name="klimatyzacja" id="klimatyzacja" value="klimatyzacja"/><br>
+  </fieldset>
+  <button type="submit">Zarezerwuj</button>
+</form>
+<script src="script.js" type="text/javascript" defer>
+  const formularz = document.getElementById("formularz");
+  const ilosc = document.getElementById("ilosc");
+  ilosc.addEventListener("change", function() {
+    if (ilosc.value == 1) {
+      formularz.method = "zad2.php";
+    } else {
+      formularz.method = "zad3.php";
+    }
+  });
+</script>
+</body>
+</html>

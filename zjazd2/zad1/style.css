@@ -1,0 +1,41 @@
+body {
+    width: 1000px;
+}
+
+#wynik {
+    text-align: right;
+    background: lightblue;
+    height: 100px;
+    font-size: 50px;
+}
+#calc {
+    width: 600px;
+    margin: 0 auto;
+}
+#controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid lightblue;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input, select, button {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}

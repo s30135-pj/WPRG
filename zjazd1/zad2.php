@@ -3,8 +3,8 @@
     <title>Zadanie 2</title>
 </head>
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-    Dolny zakres: <input type="text" name="min">
-    Górny zakres: <input type="text" name="max">
+    Dolny zakres: <input type="number" name="min">
+    Górny zakres: <input type="number" name="max">
     <input type="submit">
 </form>
 </html>

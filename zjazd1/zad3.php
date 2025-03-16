@@ -3,7 +3,7 @@
     <title>Zadanie 2</title>
 </head>
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
-    Podaj n: <input type="text" name="n">
+    Podaj n: <input type="number" name="n">
     <input type="submit">
 </form>
 </html>

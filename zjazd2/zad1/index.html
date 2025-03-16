@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="calc">
+<div>
+  <div id="wynik">
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      if (params.has("wynik")) {
+        document.getElementById("wynik").innerText = "Wynik: " + params.get("wynik");
+      }
+    </script>
+  </div>  <form id="controller" method="POST" action="zad1.php">
+    <label for="pierwsza">Pierwsza liczba
+    <input id="pierwsza" name="pierwsza" type="number" value=0 />
+    </label>
+    <label for="druga">Druga liczba
+    <input id="druga" name="druga" type="number" value=0 />
+    </label>
+    <label for="dzialanie">Działanie
+    <select id="dzialanie" name="dzialanie">
+      <option value="mnoz">*</option>
+      <option value="dziel">/</option>
+      <option value="dodaj">+</option>
+      <option value="odejmij">-</option>
+    </select></label>
+    <button type="submit" id="oblicz">Oblicz</button>
+  </form>
+</div>
+</div>
+
+</body>
+</html>
