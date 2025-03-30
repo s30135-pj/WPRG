@@ -8,7 +8,8 @@
 </form>
 </html>
 <?php
-function fibonnaci($n) {
+function fibonnaci($n): array
+{
     $seq = array(0, 1);
     for ($i = 2; $i <= $n; $i++) {
         $seq[$i] = $seq[$i-1] + $seq[$i-2];
