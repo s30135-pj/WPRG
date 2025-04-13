@@ -1,0 +1,5 @@
+https://google.com;Google search engine
+https://pja.edu.pl;Polish-Japanese Academy of Information Technology
+https://9gag.com;Your funny memes on the internet
+https://facebook.com;Waste your time pretending to do social interactions
+https://github.com/wfarat;Władysław Farat's github profile
