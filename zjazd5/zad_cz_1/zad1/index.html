@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezerwacja</title>
+</head>
+<body>
+<form id="formularz" method="POST" action="dane.php">
+  <p>Pola z gwiazdką są wymagane:</p>
+  <label for="ilosc">Ilość osób*</label>
+    <select id="ilosc" name="ilosc" required>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select><br>
+  <h2>Dane zamawiającego</h2>
+  <label for="imie">Imię*</label>
+  <input type="text" id="imie" name="imie" required><br>
+  <label for="nazwisko">Nazwisko*</label>
+  <input type="text" id="nazwisko" name="nazwisko" required><br>
+  <label for="data">Data*</label>
+  <input type="date" id="data" name="data" required><br>
+  <label for="godzina">Godzina*</label>
+  <input type="time" id="godzina" name="godzina" required><br>
+  <label for="karta">Nr karty*</label>
+  <input type="text" id="karta" name="karta" required><br>
+  <button type="submit">Zarezerwuj</button>
+</form>
+</body>
+</html>

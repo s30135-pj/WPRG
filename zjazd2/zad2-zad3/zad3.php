@@ -1,6 +1,6 @@
 <?php
 echo "<h1>Podaj dane pozostałych osób</h2>";
-echo "<form action='zad2.php' method='post'>";
+echo "<form action='display.php' method='post'>";
 foreach ($_POST as $key => $value) {
     if (is_array($value)) {
         foreach ($value as $subValue) {
